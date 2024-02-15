@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client side</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tori's social media</h1>
+        <button id="getProfiles">Get profiles</button>
+
+        <!-- Container for profile creation -->
+        <div id="newProfile" class="profile-card">
+            <label for="usernameInput">Enter Username: </label>
+            <input type="text" id="usernameInput" autocomplete="off" />
+            <button id="addProfile">Add profile</button>
+        </div>
+
+        <!-- Container for getting user's posts -->
+        <div id="userPosts" class="profile-card">
+            <label for="userInput">Enter Username: </label>
+            <input type="text" id="userInput" autocomplete="off" />
+            <button id="getUserPosts">Get User's Posts</button>
+        </div>
+
+        <!-- Container for updating username -->
+        <div id="updateUsernameDiv" style="display: none;" class="profile-card">
+            <label for="updateUsernameInput">Update Username: </label>
+            <input type="text" id="updateUsernameInput" autocomplete="off" />
+            <button id="updateUsername">Update Username</button>
+        </div>
+
+        <!-- Container for deleting profile -->
+        <div id="deleteProfileDiv" style="display: none;" class="profile-card">
+            <label for="deleteUsernameInput">Enter profile ID: </label>
+            <input type="text" id="deleteUsernameInput" autocomplete="off" />
+            <button id="deleteProfile">Delete Profile</button>
+        </div>
+
+        <div class="profile-data">
+            <pre id="header"></pre>
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
+
